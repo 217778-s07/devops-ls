@@ -54,3 +54,9 @@ def read_root():
         "message": "Welcome to the DevOps Demo App!",
         "available_endpoints": ["/health", "/version", "/env", "/tips"]
     }
+
+@app.get("/login", summary="Login Route")
+def login():
+    return {
+        "status": "authenticated",
+}
