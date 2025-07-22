@@ -62,7 +62,7 @@ def login():
 }
 
 @app.get("/logout", summary="Logout Route")
-def login():
+def logout():
     return {
         "status": "logged out",
 }
