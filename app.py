@@ -66,3 +66,5 @@ def logout():
     return {
         "status": "logged out",
 }
+
+#TODO : Add cache route
