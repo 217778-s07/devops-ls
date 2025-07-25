@@ -14,9 +14,11 @@ spec:
     spec:
       containers:
         - name: devops-app
-          image: ls/devops-app:1.0.0
+          image: fastapi-app-ls
           ports:
-            - containerPort: 3000
+            - containerPort: 8000
+      imagePullSecrets:
+        - name: jfrog-pull-secret
 ---
 apiVersion: v1
 kind: Service
