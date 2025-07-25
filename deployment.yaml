@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: devops-app
-          image: fastapi-app-ls
+          image: jeff2.jfrog.io/devops-docker/fastapi-app-ls:latest
           ports:
             - containerPort: 8000
       imagePullSecrets:
